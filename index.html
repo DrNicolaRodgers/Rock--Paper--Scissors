@@ -25,7 +25,11 @@
 		
 		<button onclick="start()">Ready to play?</button>
 
-      		<h2><script type="text/javascript">document.write(start());</script></h2>
+      		<h2><script>
+var myVar = document.getElementById("answer");
+ 
+myVar.innerHTML = start();
+</script></h2>
 		
 		<script src = "javascripts/main.js"></script>
 		
