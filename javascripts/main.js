@@ -1,4 +1,4 @@
 $(function(){
-    var name = window.prompt('What is your name?');
+    var name = prompt('What is your name?');
 	$("#output").text("Hello " +name+ "!");
 });
