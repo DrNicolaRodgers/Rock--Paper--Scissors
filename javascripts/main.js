@@ -1,6 +1,6 @@
 $(function(){
 
-var player = prompt("Rock, paper, scissors, lizard or spock?");
+var player = window.prompt("Rock, paper, scissors, lizard or spock?");
 
 if (player !== null){
     player = player.toLowerCase();
