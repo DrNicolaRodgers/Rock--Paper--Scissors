@@ -145,6 +145,6 @@ else if(player === null){
 else{
   console.log("I said rock, paper, scissors, lizard or spock!")
 }
-console.log(result);
+return result;
 
 }
