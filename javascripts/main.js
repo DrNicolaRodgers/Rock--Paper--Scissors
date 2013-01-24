@@ -1,12 +1,11 @@
-function choose(){
-    var player = prompt("Rock, paper, scissors, lizard or spock?");
-}
+$(function(){
+
+var player = prompt("Rock, paper, scissors, lizard or spock?");
+
 if (player !== null){
     player = player.toLowerCase();
-  }
+}
 
-
-$(function rpsls(){
 var choices = ["rock","paper","scissors", "lizard", "spock"];
 var computer = choices[Math.floor(Math.random()*5)];
 
