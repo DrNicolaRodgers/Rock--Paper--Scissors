@@ -1,4 +1,4 @@
-$('document').ready(function() {
+$(function() {
 var player = window.prompt("Rock, paper, scissors, lizard or spock?");
 
 if (player !== null){
