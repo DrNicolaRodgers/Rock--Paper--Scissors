@@ -1,10 +1,10 @@
-var player = prompt("Rock, paper or scissors?)
+var player = prompt("Rock, paper, scissors, lizard or spock?")
 if (player !== null){
   player = player.toLowerCase();
 }
 
-var choices = ["rock","paper","scissors"];
-var computer = choices[Math.floor(Math.random()*3)];
+var choices = ["rock","paper","scissors", "lizard", "spock"];
+var computer = choices[Math.floor(Math.random()*5)];
 
 var win = "Your "+player+" beats "+computer+". You win.";
 var lose = "Your "+player+" loses to "+computer+". You lose.";
@@ -24,6 +24,14 @@ if(player === "rock"){
       case "rock":
       result = draw;
       break;
+      
+      case "lizard":
+      result = win;
+      break;
+
+      case "spock":
+      result = lose;
+      break;
     }
 }
 
@@ -40,6 +48,14 @@ else if(player === "paper"){
       break;
 
       case "rock":
+      result = win;
+      break;
+      
+      case "lizard":
+      result = lose;
+      break;
+
+      case "spock":
       result = win;
       break;
     }
@@ -59,12 +75,72 @@ else if(player === "scissors"){
       case "rock":
       result = lose;
       break;
+      
+      case "lizard":
+      result = win;
+      break;
+
+      case "spock":
+      result = lose;
+      break;
+    }
+}
+
+else if(player === "lizard"){
+   
+    switch(computer){
+        
+      case "scissors":
+      result = lose;
+      break;
+
+      case "paper":
+      result = win;
+      break;
+
+      case "rock":
+      result = lose;
+      break;
+      
+      case "lizard":
+      result = draw;
+      break;
+
+      case "spock":
+      result = win;
+      break;
+    }
+}
+
+else if(player === "spock"){
+   
+    switch(computer){
+        
+      case "scissors":
+      result = win;
+      break;
+
+      case "paper":
+      result = lose;
+      break;
+
+      case "rock":
+      result = win;
+      break;
+      
+      case "lizard":
+      result = lose;
+      break;
+
+      case "spock":
+      result = draw;
+      break;
     }
 }
 else if(player === null){
   console.log ("Bye!");
 }
 else{
-	console.log("I said rock, paper, or scissors!")
+	console.log("I said rock, paper, scissors, lizard or spock!")
 }
 console.log(result);
