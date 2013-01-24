@@ -1,6 +1,6 @@
 function start(){
 var player = prompt("Rock, paper, scissors, lizard or spock?");
-
+}
 if (player !== null){
     player = player.toLowerCase();
   } 
@@ -146,5 +146,5 @@ else{
   console.log("I said rock, paper, scissors, lizard or spock!")
 }
 return result;
-}
+
 }
