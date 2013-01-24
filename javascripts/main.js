@@ -1,3 +1,8 @@
+$(function(){
+    var name = window.prompt('What is your name?');
+	$("#output").text("Hello " +name+ "!");
+});
+
 $(function rpsls(){
 
 var player = window.prompt("Rock, paper, scissors, lizard or spock?");
