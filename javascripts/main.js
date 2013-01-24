@@ -146,5 +146,5 @@ else if(player === null){
 else{
   result = "I said rock, paper, scissors, lizard or spock!"
 }
-$("#output").text(result);
+$("#output").text("Help!!"result);
 });
