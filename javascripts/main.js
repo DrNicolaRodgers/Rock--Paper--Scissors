@@ -145,7 +145,15 @@ else if(player === null){
 else{
   result = "I said rock, paper, scissors, lizard or spock!";
 }
+var winningStreak = 0;
+if (result === win){
+    winningStreak += 1;
+}
+else{
+    winningStreak=0;
+}
   $("#output").text(result);
+  $("#streak").text(winningStreak);
 });
 
 
