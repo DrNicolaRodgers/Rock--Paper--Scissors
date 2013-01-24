@@ -1,4 +1,4 @@
-$(function(){
+$(function rpsls(){
 
 var player = window.prompt("Rock, paper, scissors, lizard or spock?");
 
