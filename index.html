@@ -21,8 +21,12 @@
 			<li>Rock crushes scissors</li>
 		</ul>
 		
-		<button onclick="start()">Ready to play?</button>
+		<h2 id="answer">Will you win?</h2>
+		
+		<button type = "button" onclick="start()">Ready to play?</button>
 		
 		<script src = "javascripts/main.js"></script>
+		<script>document.getElementById("answer").innerHTML=start();</script>
+		
 	</body>
 </html>
