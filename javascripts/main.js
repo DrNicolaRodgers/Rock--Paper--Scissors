@@ -1,4 +1,4 @@
-$(function rpsls() {
+$('#myDiv').click(function(){
 var player = prompt("Rock, paper, scissors, lizard or spock?");
 
 if (player !== null){
@@ -143,9 +143,9 @@ else if(player === null){
   result = "Bye!";
 }
 else{
-  result = "I said rock, paper, scissors, lizard or spock!"
+  result = "I said rock, paper, scissors, lizard or spock!";
 }
-$("#output").text("Help!!"+result+);
+  $("#output").text(result);
 });
 
 
