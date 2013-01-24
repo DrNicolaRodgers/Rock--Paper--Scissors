@@ -140,10 +140,10 @@ else if(player === "spock"){
     }
 }
 else if(player === null){
-  console.log ("Bye!");
+  result = "Bye!";
 }
 else{
-  console.log("I said rock, paper, scissors, lizard or spock!")
+  result = "I said rock, paper, scissors, lizard or spock!"
 }
 return result;
 
