@@ -1,8 +1,9 @@
 function start(){
-var player = prompt("Rock, paper, scissors, lizard or spock?")
+var player = prompt("Rock, paper, scissors, lizard or spock?");
+
 if (player !== null){
-  player = player.toLowerCase();
-}
+    player = player.toLowerCase();
+  } 
 
 var choices = ["rock","paper","scissors", "lizard", "spock"];
 var computer = choices[Math.floor(Math.random()*5)];
@@ -144,5 +145,6 @@ else if(player === null){
 else{
   console.log("I said rock, paper, scissors, lizard or spock!")
 }
-console.log(result);
+return result;
+}
 }
