@@ -8,9 +8,9 @@ if (player !== null){
 var choices = ["rock","paper","scissors", "lizard", "spock"];
 var computer = choices[Math.floor(Math.random()*5)];
 
-var win = "Your "+player+" beats "+computer+". You win.";
-var lose = "Your "+player+" loses to "+computer+". You lose.";
-var draw = "A draw: "+player+" on "+computer+".";
+var win = "Your "+player+" beats "+computer+". You win!";
+var lose = "Your "+player+" loses to "+computer+". Epic Fail!!";
+var draw = "A draw: "+player+" on "+computer+". (Just as bad as losing really)";
 
 if(player === "rock"){
     switch(computer){
