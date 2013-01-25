@@ -93,9 +93,6 @@ var winningStreak = 0;
 while (result === win){
     winningStreak = winningStreak + 1;
 }
-else{
-    winningStreak=0;
-}
   $("#output").text(result);
   $("#streak").text("Your winning streak is: " +winningStreak);
 });
