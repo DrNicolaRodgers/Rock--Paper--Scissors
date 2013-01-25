@@ -99,7 +99,7 @@ else if(player === null){
 else{
   result = "I said rock, paper, scissors, lizard or spock!";
 }
-var winningStreak = 0;
+var winningStreak;
 if (result === win){
     winningStreak = winningStreak + 1;
 }
