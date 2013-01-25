@@ -19,11 +19,13 @@ if(player === computer){
 else if(player === "rock"){
     switch(computer){
         
-      case "scissors" || "lizard":
+      case "scissors":
+      case "lizard":
       result = win;
       break;
 
-      case "paper" || "spock":
+      case "paper":
+      case "spock":
       result = lose;
       break;
     }
@@ -33,11 +35,13 @@ else if(player === "paper"){
 
     switch(computer){
         
-      case "scissors" || "lizard":
+      case "scissors":
+      case"lizard":
       result = lose;
       break;
 
-      case "rock" || "spock":
+      case "rock":
+      case "spock":
       result = win;
       break;
     }
@@ -46,11 +50,13 @@ else if(player === "scissors"){
    
     switch(computer){
 
-      case "paper" || "lizard":
+      case "paper":
+      case "lizard":
       result = win;
       break;
 
-      case "rock" || "spock":
+      case "rock":
+      case "spock":
       result = lose;
       break;
     }
@@ -60,11 +66,13 @@ else if(player === "lizard"){
    
     switch(computer){
         
-      case "scissors" || "rock":
+      case "scissors":
+      case "rock":
       result = lose;
       break;
 
-      case "paper" || "spock":
+      case "paper":
+      case "spock":
       result = win;
       break;
     }
@@ -74,11 +82,13 @@ else if(player === "spock"){
    
     switch(computer){
         
-      case "scissors" || "rock":
+      case "scissors":
+      case "rock":
       result = win;
       break;
 
-      case "paper" || "lizard":
+      case "paper":
+      case "lizard":
       result = lose;
       break;
     }
