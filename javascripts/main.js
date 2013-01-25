@@ -97,7 +97,7 @@ else{
     winningStreak=0;
 }
   $("#output").text(result);
-  $("#streak").text("Your winning streak is: "winningStreak);
+  $("#streak").text("Your winning streak is: " +winningStreak);
 });
 
 
