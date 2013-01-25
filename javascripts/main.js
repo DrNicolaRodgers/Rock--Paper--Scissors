@@ -15,24 +15,16 @@ var draw = "A draw: "+player+" on "+computer+". (Just as bad as losing really)";
 if(player === "rock"){
     switch(computer){
         
-      case "scissors":
+      case "scissors" || "lizard":
       result = win;
       break;
 
-      case "paper":
+      case "paper" || "spock":
       result = lose;
       break;
 
       case "rock":
       result = draw;
-      break;
-      
-      case "lizard":
-      result = win;
-      break;
-
-      case "spock":
-      result = lose;
       break;
     }
 }
@@ -41,7 +33,7 @@ else if(player === "paper"){
 
     switch(computer){
         
-      case "scissors":
+      case "scissors" || "lizard":
       result = lose;
       break;
 
@@ -49,15 +41,7 @@ else if(player === "paper"){
       result = draw;
       break;
 
-      case "rock":
-      result = win;
-      break;
-      
-      case "lizard":
-      result = lose;
-      break;
-
-      case "spock":
+      case "rock" || "spock":
       result = win;
       break;
     }
@@ -70,19 +54,11 @@ else if(player === "scissors"){
       result = draw;
       break;
 
-      case "paper":
+      case "paper" || "lizard":
       result = win;
       break;
 
-      case "rock":
-      result = lose;
-      break;
-      
-      case "lizard":
-      result = win;
-      break;
-
-      case "spock":
+      case "rock" || "spock":
       result = lose;
       break;
     }
@@ -92,24 +68,16 @@ else if(player === "lizard"){
    
     switch(computer){
         
-      case "scissors":
+      case "scissors" || "rock":
       result = lose;
       break;
 
-      case "paper":
+      case "paper" || "spock":
       result = win;
       break;
 
-      case "rock":
-      result = lose;
-      break;
-      
       case "lizard":
       result = draw;
-      break;
-
-      case "spock":
-      result = win;
       break;
     }
 }
@@ -118,19 +86,11 @@ else if(player === "spock"){
    
     switch(computer){
         
-      case "scissors":
+      case "scissors" || "rock":
       result = win;
       break;
 
-      case "paper":
-      result = lose;
-      break;
-
-      case "rock":
-      result = win;
-      break;
-      
-      case "lizard":
+      case "paper" || "lizard":
       result = lose;
       break;
 
@@ -146,14 +106,14 @@ else{
   result = "I said rock, paper, scissors, lizard or spock!";
 }
 var winningStreak = 0;
-if (result === win){
-    winningStreak += 1;
+while (result === win){
+    winningStreak = winningStreak + 1;
 }
 else{
     winningStreak=0;
 }
   $("#output").text(result);
-  $("#streak").text(winningStreak);
+  $("#streak").text("Your winning streak is: "winningStreak);
 });
 
 
