@@ -1,3 +1,5 @@
+var winningStreak =0;
+
 $('#myDiv').click(function(){
 var player = prompt("Rock, paper, scissors, lizard or spock?");
 
