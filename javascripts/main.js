@@ -12,7 +12,11 @@ var win = "Your "+player+" beats "+computer+". You win!";
 var lose = "Your "+player+" loses to "+computer+". Epic Fail!!";
 var draw = "A draw: "+player+" on "+computer+". (Just as bad as losing really)";
 
-if(player === "rock"){
+if(player === computer){
+    result = draw;
+}
+
+else if(player === "rock"){
     switch(computer){
         
       case "scissors" || "lizard":
@@ -21,10 +25,6 @@ if(player === "rock"){
 
       case "paper" || "spock":
       result = lose;
-      break;
-
-      case "rock":
-      result = draw;
       break;
     }
 }
@@ -37,10 +37,6 @@ else if(player === "paper"){
       result = lose;
       break;
 
-      case "paper":
-      result = draw;
-      break;
-
       case "rock" || "spock":
       result = win;
       break;
@@ -49,10 +45,6 @@ else if(player === "paper"){
 else if(player === "scissors"){
    
     switch(computer){
-        
-      case "scissors":
-      result = draw;
-      break;
 
       case "paper" || "lizard":
       result = win;
@@ -75,10 +67,6 @@ else if(player === "lizard"){
       case "paper" || "spock":
       result = win;
       break;
-
-      case "lizard":
-      result = draw;
-      break;
     }
 }
 
@@ -92,10 +80,6 @@ else if(player === "spock"){
 
       case "paper" || "lizard":
       result = lose;
-      break;
-
-      case "spock":
-      result = draw;
       break;
     }
 }
