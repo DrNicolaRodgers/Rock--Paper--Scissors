@@ -28,7 +28,11 @@ if (player !== null){
 
 var choices = ["rock","paper","scissors", "lizard", "spock"];
 var computer = choices[Math.floor(Math.random()*5)];
-$("#computer").text(computer);
+
+var img = new Image();
+varSrc = "img/"+computer+".png";
+img.src = varSrc;
+$("#computer").html(img);
 
 var win = "Your "+player+" beats "+computer+". You win!";
 var lose = "Your "+player+" loses to "+computer+". Epic Fail!!";
