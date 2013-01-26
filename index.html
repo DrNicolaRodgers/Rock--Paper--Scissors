@@ -2,28 +2,36 @@
 <html >
   	<head>
 		<title>Rock, Paper, Scissors, Lizard or Spock?</title>
+		<style>
+			
+			#rules { width: 50%; }
+			#game { position: absolute; right: 0; top: 0; width: 50%; }
+		
+		</style>
 	</head>
 
 	<body>
 		<h1>Rock, Paper, Scissors, Lizard or Spock</h1>
 
-		<h3>Rules</h3>
-		<ul>
-			<li>Scissors cut paper</li>
-			<li>Paper covers rock</li>
-			<li>Rock crushes lizard</li>
-			<li>Lizard poisons Spock</li>
-			<li>Spock smashes (or melts) scissors</li>
-			<li>Scissors decapitate lizard</li>
-			<li>Lizard eats paper</li>
-			<li>Paper disproves Spock</li>
-			<li>Spock vaporizes rock</li>
-			<li>Rock crushes scissors</li>
-		</ul>
-		
+		<div id="rules">
+			<h3>Rules</h3>
+			<ul>
+				<li>Scissors cut paper</li>
+				<li>Paper covers rock</li>
+				<li>Rock crushes lizard</li>
+				<li>Lizard poisons Spock</li>
+				<li>Spock smashes (or melts) scissors</li>
+				<li>Scissors decapitate lizard</li>
+				<li>Lizard eats paper</li>
+				<li>Paper disproves Spock</li>
+				<li>Spock vaporizes rock</li>
+				<li>Rock crushes scissors</li>
+			</ul>
+		</div>
 		<!--<div id="myDiv">
     			<button>Click to play</button>
 		</div>-->
+		<div id="game">
 		<h2>Choose your weapon:</h2>
 			<img id="rock" src="img/rock.png">
 			<img id="paper" src="img/paper.png">
@@ -35,6 +43,7 @@
 		<div id="output" style="color:magenta; font-size:40px;"></div>
 		<div id="streak" style="color:blue; font-size:30px;"></div>
 		
+		</div>
 		<script src="js/jquery.js"></script>
 		<!--<script src ="js/main.js"></script>-->
 		<script src="js/rpsls.js"></script>
