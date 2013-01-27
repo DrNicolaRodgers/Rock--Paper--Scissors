@@ -19,8 +19,17 @@ $("#spock").click(function(){
 	play("spock");
 });
 
+
+$("#finish").click(function(){
+	$("#computer").html("");
+	$("#output").text("Bye!!");
+	$("#streak").text("");
+	
+});
+
 var play = function play(player){
 
+document.getElementById("bye").style.display = "block";
 
 if (player !== null){
     player = player.toLowerCase();
