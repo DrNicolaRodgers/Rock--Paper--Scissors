@@ -27,6 +27,10 @@ $("#finish").click(function(){
 	
 });
 
+$("#bye").click(function(){
+	document.getElementById("bye").style.display = "none";
+});
+
 var play = function play(player){
 
 document.getElementById("bye").style.display = "block";
